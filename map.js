@@ -188,9 +188,9 @@ function Astar(){
     Astar_algorithm();
 }
 
-let dy = [1, 1, 0, -1, -1, -1, 0, 1];
-let dx = [0, 1, 1, 1, 0, -1, -1, -1];
-let dd = [10, 14, 10, 14, 10, 14, 10, 14];
+let dy = [1, 0, -1, 0];
+let dx = [0, 1, 0, -1];
+let dd = [10, 10, 10, 10];
 let timeoutID = null;
 
 function backTracking(y, x){
@@ -232,7 +232,7 @@ function Astar_algorithm() {
         return;
     }
 
-    for(let i = 0; i < 8; i++){
+    for(let i = 0; i < dy.length; i++){
         let nextY = y + dy[i];
         let nextX = x + dx[i];
         let nextg = dd[i];
