@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A* Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <button id="restart" onclick="restart()">맵 초기화</button>
+    <button id="start" onclick="changeMode(1)">출발</button>
+    <button id="end" onclick="changeMode(2)">도착</button>
+    <button id="wall" onclick="changeMode(0)">벽</button>
+    <button id="algorithm">알고리즘 시작</button>
+
+    <script src="map.js"></script>
+</body>
+</html>

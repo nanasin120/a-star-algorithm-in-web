@@ -1,0 +1,9 @@
+#canvas {
+  border: 1px solid black;
+  background: white;      
+
+  width: 560px;
+  height: 560px;
+  image-rendering: pixelated;
+  display: block;
+}
